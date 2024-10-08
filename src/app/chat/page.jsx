@@ -10,7 +10,7 @@ const ChatPage = () => {
   const { chats, activeChatId, createNewChat, sendMessage } = useChatStore();
 
   return (
-    <div className="chat-page flex">
+    <div className="h-screen flex">
       <ChatSidebar 
         chats={chats} 
         activeChatId={activeChatId} 
