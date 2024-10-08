@@ -7,7 +7,9 @@ const ChatContainer = ({ chats, activeChatId, onSendMessage }) => {
   const [prompt, setPrompt] = useState("");
 
   const handlePromptChange = (e) => {
-    setPrompt(e.target.value);
+    if(prompt.trim()){
+        setPrompt('');
+    }
   };
   const handleSendMessage = (message) => {
     if (message.trim()) {
@@ -31,28 +33,37 @@ const ChatContainer = ({ chats, activeChatId, onSendMessage }) => {
                 }`}
               >
                 {/* Profile Image */}
-              {message.sender !== "user" && (
-                <div className="mr-2">
-                  <Image
-                    src="/gala_add.png"
-                    alt="Bot Profile"
-                    width={30}
-                    height={30}
-                  />
+                {message.sender !== "user" && (
+                  <div className="mr-2 flex-shrink-0">
+                    <Image
+                      src="/gala_add.png"
+                      alt="Bot Profile"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
+                )}
+                {/* Profile Image for User */}
+                {message.sender === "user" && (
+                  <div className="mr-2 flex-shrink-0">
+                    <Image
+                      src="/s.svg"
+                      alt="User Profile"
+                      width={30}
+                      height={30}
+                    />
+                  </div>
+                )}
+                <div className="flex flex-col gap-5">
+                  {message.text}
+
+                  {message.sender !== "user" && (
+                    <div className="flex gap-3">
+                      <Image src="/Reload.svg" alt="" width={18} height={18} />
+                      <Image src="/Copy.svg" alt="" width={18} height={18} />
+                    </div>
+                  )}
                 </div>
-              )}
-              {/* Profile Image for User */}
-              {message.sender === "user" && (
-                <div className="mr-2">
-                  <Image
-                    src="/s.svg"
-                    alt="User Profile"
-                    width={30}
-                    height={30}
-                  />
-                </div>
-              )}
-                {message.text}
               </div>
             </div>
           ))}
@@ -63,6 +74,7 @@ const ChatContainer = ({ chats, activeChatId, onSendMessage }) => {
               type="text"
               className="w-full outline-none"
               placeholder="Write your message"
+              onChange={(e) => setPrompt(e.target.value)}
               onKeyDown={(e) => {
                 if (e.key === "Enter") {
                   handleSendMessage(e.target.value);
@@ -71,7 +83,10 @@ const ChatContainer = ({ chats, activeChatId, onSendMessage }) => {
               }}
             />
 
-            <button onClick={handleSendMessage(prompt)}>
+            <button
+              onClick={handlePromptChange} // Handle message send when button clicked
+              disabled={!prompt.trim()}
+            >
               <Image src="/send.svg" alt="" height={30} width={30} />
             </button>
           </div>
