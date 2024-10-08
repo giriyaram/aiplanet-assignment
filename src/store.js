@@ -40,7 +40,7 @@ export const useChatStore = createWithEqualityFn((set) => ({
   // Action to send a message in the active chat
   sendMessage: (message) =>
     set((state) => {
-      const botResponse = "This is a response from the bot"; // Mock bot response
+      const botResponse = "This is a response from the bot `The sun peeks, golden, bright, Over mountains, bathed in light. Sleepy clouds, in hues of rose, Slowly wake, as morning grows. Dewdrops gleam on grass so green, Birdsong fills the air, serene. A gentle breeze, a whispered sigh, As nature wakes beneath the sky. Hopeful heart, with joy you soar, A brand new day, to live once more.`"; // Mock bot response
       return {
         chats: state.chats.map((chat) =>
           chat.id === state.activeChatId
