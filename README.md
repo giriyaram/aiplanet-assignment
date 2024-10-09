@@ -13,10 +13,7 @@ This project is an **AI-powered interface** designed to simulate intelligent int
 - [Tech Stack](#tech-stack)
 - [Screenshots](#screenshots)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
+- [Developer Info](#-developer-information)
 ---
 
 ## 🧐 Overview
@@ -89,4 +86,17 @@ To get the project running locally, follow these steps:
 4. **Open the browser and navigate to** http://localhost:3000.
 
 
+
+---
+
+## 👨‍💻 Developer Information
+
+This project was developed by **[Giri Yaram]** in collaboration with **AI Planet**. Below is how you can reach out for questions, feedback, or contributions:
+
+- **Name:** [Giri Yaram]
+- **LinkedIn:** [linkedin.com/in/giri-yaram](https://www.linkedin.com/in/giri-yaram/)
+- **GitHub:** [github.com/giriyaram](https://github.com/giriyaram/)
+
+
+---
 
