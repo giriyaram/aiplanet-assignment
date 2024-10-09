@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI-Powered Workflow and Assistant Interface
 
-## Getting Started
+![Project Banner](./public/ai-planet-banner.png)
 
-First, run the development server:
+This project is an **AI-powered interface** designed to simulate intelligent interactions and dynamic workflows. The system allows users to communicate with an AI assistant, manage multiple conversation threads, and perform additional workflow-related tasks such as deploying/undeploying features, responding to system states, and maintaining contextual chat history.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📜 Table of Contents
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+---
 
-## Learn More
+## 🧐 Overview
 
-To learn more about Next.js, take a look at the following resources:
+The **AI-Powered Workflow and Assistant Interface** is designed to handle interactions with an AI assistant, including managing conversations, handling user actions, and dynamically responding to various system states. The system integrates both chat functionality and broader AI-driven workflows, such as deploying models, managing configurations, and navigating between workflows.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Key Objectives:
+- Manage multiple AI chats simultaneously.
+- Provide users with deployment/undeployment functionality.
+- Use dynamic prompts and responsive actions within the workflow.
+- Seamless state management with Zustand to track and update the application’s current state.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ✨ Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **AI Chat Functionality:** Interact with the AI assistant through chat, with the ability to switch between multiple conversations dynamically.
+- **Sidebar for Chat Navigation:** Easily switch between chats through a fixed sidebar, allowing users to select different conversation threads.
+- **Deploy/Undeploy System:** The interface integrates deploy/undeploy buttons for managing workflows and system states.
+- **Copy to Clipboard Feature:** Copy chat outputs with ease using a copy button next to each message.
+- **Dynamic State Handling:** Use Zustand for efficient state management across various components like chat threads, deployment status, and user input tracking.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## 💻 Tech Stack
+
+- **Frontend:** Next.js, React, Tailwind CSS for responsive styling.
+- **State Management:** Zustand for managing global application states.
+- **Toast Notifications:** React-toastify for alert and notification handling.
+
+---
+
+## 📸 Screenshots
+
+Here are some key visuals of the application:
+### 1. **Nodes Tab with Input Validation:** 
+![Node Error Management](./public/node-error-management.png)
+
+### 2. **Deploy/Undeploy Workflow Feature**
+![Deploy/Undeploy Feature](./public/undeploy.png)
+
+### 3. **Sidebar with Chat Selection**
+![Sidebar](./public/chat_sidebar.png)
+
+### 4. **Chat Interface**
+![Chat Interface](./public/chat-interface.png)
+
+
+
+---
+
+## 🚀 Installation
+
+To get the project running locally, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/giriyaram/aiplanet-assignment.git
+   cd aiplanet-assignment
+   ```
+2. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+3. **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+4. **Open the browser and navigate to** http://localhost:3000.
+
+
+
