@@ -8,11 +8,11 @@ This project is an **AI-powered interface** designed to simulate intelligent int
 
 ## 📜 Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Screenshots](#screenshots)
-- [Installation](#installation)
+- [Overview](#-overview)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Screenshots](#-screenshots)
+- [Installation](#-installation)
 - [Developer Info](#-developer-information)
 ---
 
@@ -91,9 +91,9 @@ To get the project running locally, follow these steps:
 
 ## 👨‍💻 Developer Information
 
-This project was developed by **[Giri Yaram]** in collaboration with **AI Planet**. Below is how you can reach out for questions, feedback, or contributions:
+This project was developed by **Giri Yaram** in collaboration with **AI Planet**. Below is how you can reach out for questions, feedback, or contributions:
 
-- **Name:** [Giri Yaram]
+- **Name:** Giri Yaram
 - **LinkedIn:** [linkedin.com/in/giri-yaram](https://www.linkedin.com/in/giri-yaram/)
 - **GitHub:** [github.com/giriyaram](https://github.com/giriyaram/)
 
